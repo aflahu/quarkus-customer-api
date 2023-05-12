@@ -2,6 +2,8 @@ package com.redhat.customer;
 
 import lombok.Data;
 
+import java.util.Date;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
@@ -24,5 +26,7 @@ public class Customer {
     private String email;
     
     private String phone;
+
+    private Date birthdate;
 
 }

@@ -2,6 +2,8 @@ package com.redhat.customer;
 
 import lombok.Data;
 
+import java.util.Date;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
@@ -36,5 +38,8 @@ public class CustomerEntity {
 
     @Column(name = "phone")
     private String phone;
+
+    @Column(name = "birthdate")
+    private Date birthdate;
 
 }
